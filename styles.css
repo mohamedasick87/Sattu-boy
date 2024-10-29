@@ -83,26 +83,30 @@ body {
         }
     
         /* Styling for each sub-box inside the education container */
-        .education-subbox {
-            background-color: #ffffff; /* White background for sub-boxes */
-            border: 1px solid #ddd; /* Subtle border around sub-boxes */
-            border-radius: 8px; /* Rounded corners for sub-boxes */
-            padding: 15px; /* Padding inside the sub-boxes */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for each sub-box */
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
-        }
-    
-        /* Hover effect for each sub-box */
-        .education-subbox:hover {
-            transform: scale(1.05); /* Slightly scale up */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow depth */
-            background-color: #f0f0f0; /* Light gray background on hover */
-        }
-    
-        /* Adjust margin between sub-boxes */
-        .education-subbox:not(:last-child) {
-            margin-bottom: 15px;
-        }
+        /* Education Sub-box Styling */
+                .education-subbox {
+                    background-color: #ffffff; /* Default white background */
+                    border: 1px solid #ddd; /* Light border */
+                    border-radius: 8px; /* Rounded corners */
+                    padding: 15px; /* Internal padding */
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+                    color: black; /* Default text color */
+                }
+
+                /* Hover effect for each sub-box */
+                .education-subbox:hover {
+                    transform: scale(1.05); /* Slightly scale up */
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow depth */
+                    background: linear-gradient(45deg, #147eef, #1ce61c); /* Gradient background on hover */
+                    color: white; /* White text on hover */
+                }
+
+                /* Margin adjustment between sub-boxes */
+                .education-subbox:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
 
          /* Basic styling for the skill images */
          .skill-image {
@@ -126,15 +130,67 @@ body {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     }
 
-    .social-icons a {
-        color: #000; /* Default icon color */
-        text-decoration: none; /* Removes underline on the phone number */
-        transition: color 0.3s ease; /* Smooth color transition */
-    }
+    /* Social icon spacing */
+/* Social icon styling */
+/* Ensure consistent spacing for all social icons */
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px; /* Adjust margin as needed */
+    transition: color 0.3s;
+}
 
-    .social-icons a:hover {
-        color: #007bff; /* Change color on hover */
-    }
+.social-icons a:last-child {
+    margin-right: 0; /* Remove margin on the last icon */
+}
+
+/* Highlight effect on hover */
+.social-icons a:hover {
+    color: #147eef;
+}
+
+
+/* Popup styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.popup-content {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Close button */
+.close {
+    color: #333;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+                /* finishing social icon */
 
 
     /* Initial styles for the welcome message */
@@ -188,8 +244,53 @@ body {
 }
 
 .hover-gradient-card:hover {
-    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient background on hover */
+    background: linear-gradient(45deg, #147eef, #1ce61c); /* Gradient background on hover */
     color: white; /* Change text color on hover to contrast with the gradient */
     transform: scale(1.05); /* Optional: Slightly enlarge the card on hover */
+}
+
+
+/* General Card Styling */
+.card {
+    background-color: #f0f0f0; /* Default background color */
+    color: black; /* Default text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(240, 230, 230, 0.849); /* Soft shadow */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card-body ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Hover Gradient Effect */
+.hover-gradient-card:hover {
+    background: linear-gradient(45deg, #147eef, #1ce61c); /* Gradient background on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Apply hover-gradient to the specified project cards */
+.row .card {
+    /* Adding the hover effect */
+    background-color: #f0f0f0; /* Ensuring the same initial state */
+}
+
+.row .card:hover {
+    background: linear-gradient(45deg, #147eef, #1ce61c);
+    color: white;
+    transform: scale(1.05);
 }
 

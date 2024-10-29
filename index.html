@@ -136,11 +136,11 @@
             <h2 class="text-center">My Skills</h2>
             <div class="row text-center justify-content-center">
                 <div class="col-6 col-md-2 mb-4">
-                    <img src="java.png" alt="Java" class="skill-image img-fluid">
+                    <img src="jaavaeee.jpg" alt="Java" class="skill-image img-fluid">
                     <p>Java</p>
                 </div>
                 <div class="col-6 col-md-2 mb-4">
-                    <img src="spring.jpeg" alt="SpringBoot" class="skill-image img-fluid">
+                    <img src="SpringBoot-Logo-qu.png" alt="SpringBoot" class="skill-image img-fluid">
                     <p>SpringBoot</p>
                 </div>
                 <div class="col-6 col-md-2 mb-4">
@@ -197,7 +197,7 @@
                             <li>Implemented CRUD operations for managing quizzes and questions, ensuring seamless interaction with a PostgreSQL database to store quiz data and user scores.</li>
                             <li>Designed RESTful APIs for various quiz-related functionalities, including quiz creation, updates, deletions, and score tracking, providing a smooth user experience.</li>
                             <li>Ensured scalability and maintainability by decoupling services and adhering to microservices patterns, allowing for easy addition of new features and services.</li>
-                            <li>Integrated user authentication and role-based access control, enhancing security and restricting quiz access based on user roles.</li>
+                           
                         </ul>
                         
                         
@@ -230,20 +230,32 @@
     <section id="contact" class="py-5 bg-light">
         <div class="container text-center"  style="color: black;">
             <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to email me at <a href=href="mailto:sathya.tvr.tech@gmail.com">sathya.tvr.tech@gmail.com</a>.</p>
+            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:sathya.tvr.tech@gmail.com">sathya.tvr.tech@gmail.com</a>.</p>
             <div class="social-icons">
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/cozitzasick_/" class="me-3" target="_blank">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mohamed-asick-a-54580a257" class="me-3" target="_blank">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                    <a href="https://github.com/mohamedasick87" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a>
-                
+                <a href="https://www.instagram.com/labirra_cr12/profilecard/?igsh=dTZsd2g5ZzBpc3g3" class="me-3" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sathya-a-9877bb31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="me-3" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/mohamedasick87" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <!-- Phone Icon -->
+                <a href="#" class="me-3" onclick="showPopup()">
+                    <i class="fas fa-phone fa-2x"></i>
+                </a>
+            </div>
+            
+            <!-- Popup for displaying the phone number -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Contact Number: +91 9345983067</p>
                 </div>
+            </div>
+            
+            
                 
                 <br>
                 © 2024 All rights reserved by MOHAMED ASICK
@@ -278,6 +290,17 @@
                 }
             });
         });
+        
+
+                        function showPopup() {
+                    document.getElementById("popup").style.display = "block";
+                }
+
+                function closePopup() {
+                    document.getElementById("popup").style.display = "none";
+                }
+
+
     </script>
      <script src="demo.js"></script>
 </body>

@@ -1,4 +1,7 @@
-
+*{
+    background: linear-gradient(45deg, #03243f, #000000);
+    color: white;
+}
 /* Navbar Styling */
 nav.navbar {
     background-color: #000; /* Black background */
@@ -89,7 +92,7 @@ body {
                     border: 1px solid #ddd; /* Light border */
                     border-radius: 8px; /* Rounded corners */
                     padding: 15px; /* Internal padding */
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+                    
                     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
                     color: black; /* Default text color */
                 }
@@ -98,7 +101,7 @@ body {
                 .education-subbox:hover {
                     transform: scale(1.05); /* Slightly scale up */
                     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow depth */
-                    background: linear-gradient(45deg, #147eef, #1ce61c); /* Gradient background on hover */
+                    background: linear-gradient(45deg, #03243f, #000000); /* Gradient background on hover */
                     color: white; /* White text on hover */
                 }
 
@@ -235,16 +238,19 @@ body {
 }
 
 /* <!--height and width--> */
+.card-title{
+    color: white;
+}
 .hover-gradient-card {
     background-color: #f0f0f0; /* Default background color */
-    color: black; /* Default text color */
+    color: rgb(245, 245, 245); /* Default text color */
     border-radius: 10px; /* Optional: Rounded corners */
     box-shadow: 0 4px 8px rgba(240, 230, 230, 0.849); /* Optional: Adds a shadow */
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 .hover-gradient-card:hover {
-    background: linear-gradient(45deg, #147eef, #1ce61c); /* Gradient background on hover */
+    background: linear-gradient(45deg, #03243f, #000000); /* Gradient background on hover */
     color: white; /* Change text color on hover to contrast with the gradient */
     transform: scale(1.05); /* Optional: Slightly enlarge the card on hover */
 }
@@ -277,7 +283,7 @@ body {
 
 /* Hover Gradient Effect */
 .hover-gradient-card:hover {
-    background: linear-gradient(45deg, #147eef, #1ce61c); /* Gradient background on hover */
+    background: linear-gradient(45deg, #03243f, #000000); /* Gradient background on hover */
     color: white; /* Change text color on hover */
     transform: scale(1.05); /* Slightly enlarge the card on hover */
 }
@@ -289,7 +295,7 @@ body {
 }
 
 .row .card:hover {
-    background: linear-gradient(45deg, #147eef, #1ce61c);
+    background: linear-gradient(45deg, #03243f, #000000);
     color: white;
     transform: scale(1.05);
 }
